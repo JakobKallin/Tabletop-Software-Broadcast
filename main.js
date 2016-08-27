@@ -4,7 +4,7 @@ var connections = {};
 
 server.on('connection', function(connection) {
     var client = connection.upgradeReq.connection.remoteAddress;
-    var session = connection.upgradeReq.url.substring(1);
+    var session = connection.upgradeReq.url;
     connections[session] = connections[session] || [];
     connections[session].push(connection);
     console.log('%s connected to session "%s"', client, session);
