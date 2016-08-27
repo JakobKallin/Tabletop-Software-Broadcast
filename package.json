@@ -1,0 +1,8 @@
+{
+  "name": "tabletop-software-broadcast",
+  "version": "1.0.0",
+  "main": "main.js",
+  "dependencies": {
+    "ws": "1.1.1"
+  }
+}
